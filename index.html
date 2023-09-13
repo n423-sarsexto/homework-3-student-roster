@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Roster</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.iu.edu/style.css?family=BentonSans:regular,bold|BentonSansCond:regular|GeorgiaPro:regular"
+        media="screen" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <nav>
+        <div class="logo"><a href="#"><img src="assets/trident-large.png" alt="IU Trident"></a></div>
+        <p>Student Roster</p>
+    </nav>
+
+    <div id="app">
+        <div class="current">
+            <h1>Current students</h1>
+
+            <div id="students"></div>
+
+            <div class="btn-row">
+                <button id="getStudents">Update student roster</button>
+            </div>
+        </div>
+
+        <div class="add">
+            <h1>Add new students</h1>
+
+            <div class="row">
+                <label for="first-name">First name:</label>
+                <input type="text" name="first-name" id="first-name" placeholder="John">
+
+                <label for="last-name">Last name:</label>
+                <input type="text" name="last-name" id="last-name" placeholder="Smith">
+            </div>
+
+            <div class="row">
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age" placeholder="18">
+
+                <label for="phone">Phone number:</label>
+                <input type="tel" name="phone" id="phone" placeholder="123-456-7890">
+            </div>
+
+            <div class="row">
+                <label for="email">Student email:</label>
+                <input type="email" name="email" id="email" placeholder="jsmith@iu.edu">
+
+                <label for="stud-id">Student ID:</label>
+                <input type="number" name="stud-id" id="stud-id" placeholder="2000334422">
+            </div>
+
+            <div class="row">
+                <label for="classes">Classes:</label>
+                <input type="text" name="classes" id="cls" placeholder="N115, N215, N314">
+                <p>Please enter each class, separated by a comma</p>
+            </div>
+
+            <input type="submit" value="Submit student" id="submit">
+
+        </div>
+    </div>
+
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script src="app/app.js"></script>
+</body>
+
+</html>
