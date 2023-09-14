@@ -5,6 +5,7 @@ nav{
     color: #fff;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     .logo{
         img{
@@ -15,7 +16,14 @@ nav{
     p{
         font-size: 24px;
         text-align: center;
-        width: 100%;
         margin-bottom: 0px;
+    }
+
+    a{
+        font-size: 20px;
+        margin-bottom: 0px;
+        padding-right: 5px;
+        color: #fff;
+        font-family: BentonSansRegular, sans-serif;
     }
 }

@@ -15,6 +15,7 @@
     <nav>
         <div class="logo"><a href="#"><img src="assets/trident-large.png" alt="IU Trident"></a></div>
         <p>Student Roster</p>
+        <a href="#add">Add Students</a>
     </nav>
 
     <div id="app">
@@ -28,36 +29,42 @@
             </div>
         </div>
 
-        <div class="add">
-            <h1>Add new students</h1>
+        <div class="add" id="add">
+            <h1>Add new student</h1>
 
             <div class="row">
-                <label for="first-name">First name:</label>
-                <input type="text" name="first-name" id="first-name" placeholder="John">
+                <span>
+                    <label for="first-name">First name:</label>
+                    <input type="text" name="first-name" id="first-name" placeholder="John" required>
+                </span>
 
-                <label for="last-name">Last name:</label>
-                <input type="text" name="last-name" id="last-name" placeholder="Smith">
+                <span>
+                    <label for="last-name">Last name:</label>
+                    <input type="text" name="last-name" id="last-name" placeholder="Smith" required>
+                </span>
             </div>
 
             <div class="row">
-                <label for="age">Age:</label>
-                <input type="number" name="age" id="age" placeholder="18">
+                <span><label for="age">Age:</label>
+                    <input type="number" name="age" id="age" placeholder="18" required></span>
 
-                <label for="phone">Phone number:</label>
-                <input type="tel" name="phone" id="phone" placeholder="123-456-7890">
+                <span><label for="phone">Phone number:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="123-456-7890" required></span>
             </div>
 
             <div class="row">
-                <label for="email">Student email:</label>
-                <input type="email" name="email" id="email" placeholder="jsmith@iu.edu">
+                <span>
+                    <label for="email">Student email:</label>
+                    <input type="email" name="email" id="email" placeholder="jsmith@iu.edu" required></span>
 
-                <label for="stud-id">Student ID:</label>
-                <input type="number" name="stud-id" id="stud-id" placeholder="2000334422">
+                <span>
+                    <label for="stud-id">Student ID:</label>
+                    <input type="number" name="stud-id" id="stud-id" placeholder="2000334422" required></span>
             </div>
 
-            <div class="row">
+            <div class="col">
                 <label for="classes">Classes:</label>
-                <input type="text" name="classes" id="cls" placeholder="N115, N215, N314">
+                <input type="text" name="classes" id="cls" placeholder="N115, N215, N314" required>
                 <p>Please enter each class, separated by a comma</p>
             </div>
 
